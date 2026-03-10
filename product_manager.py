@@ -7,7 +7,7 @@ class ProductManager:
   self.products.append(product)
   print(f"Produsul {product.name} a fost adaugat cu succes.")
   
- def dispaly_all_products(self):
+ def display_all_products(self):
      print("\n Lista produse disponibile:")
      if not self.products:
          print("Nu exista produse in lista.")
@@ -29,7 +29,7 @@ prod2= Product("Phone", 440, 6)
 manager.add_product(prod1)
 manager.add_product(prod2)
 
-manager.dispaly_all_products()
+manager.display_all_products()
 manager.total_value()
  
         
