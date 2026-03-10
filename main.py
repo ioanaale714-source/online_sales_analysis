@@ -14,6 +14,8 @@ def main():
     manager.display_all_products()
     manager.total_value()
     
-if __name__=="__main__":
-  main()
+    manager.remove_product("Mouse")
+    manager.display_all_products()
     
+if __name__=="__main__":
+   main()

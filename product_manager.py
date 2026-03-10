@@ -21,16 +21,14 @@ class ProductManager:
      print(f"\n Valoarea totala a produselor este de {total} lei.")
      return total
  
-manager=ProductManager()
- 
-prod1=Product("Laptop", 320, 3)
-prod2= Product("Phone", 440, 6)
- 
-manager.add_product(prod1)
-manager.add_product(prod2)
 
-manager.display_all_products()
-manager.total_value()
+ def remove_product(self, name):
+    initial_count= len(self.products)
+    self.products=[p for p in self.products if p.name != name]
+    if len(self.products)<initial_count:
+        print(f"Produsul {name} a fost eliminat.")
+    else:
+        print(f"Produsul {name} nu a fost gasit.")
  
         
  
