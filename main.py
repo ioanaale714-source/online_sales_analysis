@@ -5,9 +5,9 @@ def main():
     manager=ProductManager()
     cos=Cart()
     
-    p1=Product("Laptop", 3500, 4)
-    p2=Product("Phone", 2670, 2)
-    p3=Product("Monitor", 120, 8)
+    p1=Product("Mouse", 3500, 4)
+    p2=Product("Monitor", 2670, 1)
+    p3=Product("Phone", 220, 8)
     
     manager.add_product(p1)
     manager.add_product(p2)
